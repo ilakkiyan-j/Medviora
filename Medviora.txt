@@ -1,0 +1,7 @@
+Dependencies: axios, Cors, dotenv, express, express-session, html5-qrcode, pg, qrcode.react, react, react-dom, react-icons, react-router-dom, react-spinner
+
+Data Base (Medviora) : users, user_info, user_emergency_contacts, user_medical_records, Doctors, Hospital_admins, Examiners
+
+Logs structure: [Timestamp] | [Action] | [Role] | [UUID] | [Name] | [Details]
+
+

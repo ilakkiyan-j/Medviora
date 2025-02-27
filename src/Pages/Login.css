@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.outer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(99, 134, 135, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer {
+    width: 450px;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.loginContainer h2 {
+    color: rgba(0, 154, 163, 1);
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.inputField {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+.inputField:focus {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+}
+.loginButton {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 154, 163, 1);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+.loginButton:hover {
+    background: rgba(0, 154, 163, 0.8);
+}
+.forgotPassword {
+    display: block;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.772);
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.forgotPassword:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.logo{
+    width: 50px;
+}

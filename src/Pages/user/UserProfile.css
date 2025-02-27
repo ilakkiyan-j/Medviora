@@ -1,0 +1,467 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf4f4;
+    /* Light Teal Background */
+    color: #333;
+    /* Dark Gray Text */
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+/* Profile Content Area */
+.profile-content {
+    background-color: #ffffff;
+    /* White Card Background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft Shadow */
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    /* Take up most of the container width */
+    align-items: center;
+}
+
+.profile-content img {
+    width: 30px;
+    height: 30px;
+    /* Add a subtle shadow */
+}
+
+.grid-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+/* Profile Card */
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align content to the left */
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/* Profile Name */
+.profile-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    /* Dark Blue-Gray */
+    margin-bottom: 10px;
+}
+
+/* Profile Information */
+.profile-info {
+    font-size: 1.1rem;
+    color: #555;
+    /* Medium Gray */
+    margin-top: 10px;
+}
+
+/* Edit Buttons */
+.edit-btn {
+    background-color: #3498db;
+    /* Light Blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+    /* Darker Blue */
+}
+
+/* Emergency Details Section */
+.emergency-details {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    /* Light Gray background */
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34495e;
+    /* Dark Blue-Gray */
+    margin-bottom: 10px;
+}
+
+/* Profile Image */
+.profile-image-container {
+    align-self: center;
+    /* Center the image */
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+}
+
+.no-image-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #e74c3c;
+    /* Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+    /* Darker Red */
+}
+
+/* Account Details */
+.account-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+
+}
+
+.about-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-img img {
+    width: 180px;
+    height: 180px;
+}
+
+.account-details p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* QR Code Styling */
+.qr-code {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #ecf0f1;
+    /* Light Gray */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    /* Dark Blue-Gray */
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Toggle Button (assuming you have custom styles for it) */
+.toggle-button {
+    /* Add specific styles if needed */
+    margin-top: 5px;
+}
+
+
+/* New styles for toggle button alignment */
+.visibility-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the toggle horizontally */
+    gap: 10px;
+    /* Add spacing between the label and the toggle */
+    margin-bottom: 10px;
+}
+
+.visibility-toggle p {
+    margin: 0;
+    /* Remove default paragraph margins */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .profile-content,
+    .about-section {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .profile-name {
+        font-size: 1.8rem;
+    }
+
+    .profile-info {
+        font-size: 1rem;
+    }
+
+    .visibility-toggle {
+        flex-direction: column;
+        align-items: center;
+        /* Stack vertically and center on smaller screens */
+    }
+}
+
+.profile-card .edit-btn,
+.profile-card .logout-btn {
+    width: 80%;
+    /* Ensure both buttons take full width */
+    margin-top: 10px;
+    /* Add space between buttons */
+    text-align: center;
+}
+
+
+.toggle-container {
+    width: 50px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Toggle Circle (Knob) */
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Active State */
+.on {
+    background-color: #6b5b95;
+}
+
+.on .toggle-circle {
+    transform: translateX(25px);
+}
+
+.toggle-table {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.toggle-table tr {
+    display: flex;
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+.account-details {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    gap:30px;
+}
+
+/* ✅ Settings Icon */
+.setting {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.setting img {
+    width: 100%;
+    height: auto;
+}
+
+/* ✅ Dropdown Menu Inside Account Details */
+.settings-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+.settings-btn:hover {
+    background: #f0f0f0;
+}
+
+/* ✅ Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Pop-up Notification */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeOut 2s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.customer-care-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.customer-care-btn:hover {
+    background-color: #0056b3;
+}
+
+.customer-care-icon {
+    font-size: 20px;
+}
+
+.download-guide {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.download-guide:hover {
+    background-color: #218838;
+}
+
+.download-icon {
+    font-size: 18px;
+    color: white;
+}

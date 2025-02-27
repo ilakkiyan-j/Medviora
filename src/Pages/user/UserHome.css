@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f1f2;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Welcome Section */
+.welcome-section {
+    margin: 10px;
+    background-color: #4f868b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.welcome-section p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Appointment Info */
+.appointment-info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a7077;
+    padding: 10px 0;
+}
+
+/* Healing Section */
+.healing-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 5px solid #008080;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+}
+
+.healing-section h3 {
+    color: #036564;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.healing-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center; /* Vertically centers all items */
+    gap: 10px;
+  }
+  
+  
+
+.healing-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* More Link */
+.more-link {
+    justify-self: center; /* Centers the link horizontally */
+    align-self: center; /* Centers the link vertically */
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+  }
+
+.more-link:hover {
+    color: #013a3f;
+}
+
+.hospital-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    border: 3px solid #4b7775;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   margin: 10px;
+  }
+  
+  .hospital-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #036564;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .hospital-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .hospital-image {
+    width: 200px;
+    height: auto;
+    border: 2px solid #036564;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .hospital-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .hospital-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008b8b;
+    text-transform: uppercase;
+  }
+  
+  .hospital-details-link {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .hospital-visited {
+    font-size: 12px;
+    font-weight: bold;
+    color: #008b8b;
+  }
+  
+  .hospital-visited span {
+    color: #008b8b;
+    text-decoration: underline;
+  }
+  
+  
+
