@@ -102,4 +102,59 @@ router.get("/details", async (req, res) => {
     }
 });
 
+
+router.get("/records", async (req, res) => {
+    try {
+        const { sdc_code, qr_code } = req.query;
+  
+      let query = `SELECT 
+      u.sdc_code, u.qr_code,
+    umr.record_id, umr.user_id, umr.entry_type, umr.diagnosis_name, 
+    umr.history_of_present_illness, umr.treatment_undergone, 
+    umr.physician_name, umr.hospital_name, umr.appointment_date, 
+    umr.reg_no, umr.alternative_system_of_medicine,
+
+    -- Hospitalization Details
+    h.hospitalized_duration, h.reason_for_hospitalization, 
+    h.bed_no AS hospitalization_bed_no, h.treatment_undergone AS hospitalization_treatment,
+
+    -- Surgery Details
+    s.surgery_type, s.surgery_duration, s.surgery_outcome, 
+    s.medical_condition, s.surgery_bed_no,
+
+    -- Prescriptions & Lab Results
+    d.prescriptions, d.lab_results
+
+FROM user_medical_records umr
+LEFT JOIN user_hospitalization_details h ON umr.record_id = h.record_id
+LEFT JOIN user_surgery_details s ON umr.record_id = s.record_id
+LEFT JOIN user_documents d ON umr.record_id = d.record_id
+LEFT JOIN users u ON umr.user_id = u.user_id
+WHERE 1 = 1`;
+
+let queryParams = [];
+        
+if (sdc_code) {
+    query += ` AND u.sdc_code = $${queryParams.length + 1}`;
+    queryParams.push(sdc_code);
+}
+if (qr_code) {
+    query += ` AND u.qr_code = $${queryParams.length + 1}`;
+    queryParams.push(qr_code);
+}
+
+console.log("Final Query:", query);
+console.log("Query Params:", queryParams);
+
+const records = await pool.query(query, queryParams);
+  
+      return res.json({ success: true, records: records.rows });
+  
+    } catch (err) {
+      console.error("Error getting records:", err);
+      res.status(500).json({ success: false, message: "Internal server error" });
+    }
+  });
+
+
 export default router;
